@@ -36,49 +36,29 @@
   <body>
     <!-- Header -->
     <header class="container">
-      <br>
-      <h1>TP n°3 <small>REST</small></h1>
-      <hr>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Connexion
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+      <hr><hr>
     </header>
 
-    <!-- Errors -->
-    <section id="errors" class="container alert alert-danger" style="display: none">
-    </section>
-    
-    <!-- Menu -->
-    <section class="container">
-      <div class="btn-group float-right" role="group">
-        <button id="all-button" type="button" class="btn btn-light">
-          <i class="fa fa-list-alt"></i>
-        </button>
-        <button id="my-button" type="button" class="btn btn-light">
-          <i class="fa fa-user"></i>
-        </button>
-      </div>
-    </section>
-    
-    <!-- Tweets  -->
-    <section>
-      <!-- Tweets list -->
-      <div id="tweets" class="container">
-        <h3>Liste des tweets</h3>
-      </div>
-      
-      <!-- Add tweet -->
-      <div id="tweet-add" class="container">
-        <form>
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text">Tweet ></span>
-            </div>
-            <input type="text" class="form-control" id="tweet" placeholder="Entrez votre tweet" autofocus required>
-          </div>
-          <br>
-          <button type="submit" class="btn btn-success float-right">
-            <i class="fa fa-paper-plane"></i> Envoyer
-          </button>
-        </form>
-      </div>
-    </section>
+
+
   </body>
 </html>
