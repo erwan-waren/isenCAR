@@ -1,0 +1,137 @@
+<!--
+@Author: Thibault Napoléon <Imothep>
+@Company: ISEN Yncréa Ouest
+@Email: thibault.napoleon@isen-ouest.yncrea.fr
+@Created Date: 23-Jan-2018 - 23:17:36
+@Last Modified: 08-Jun-2020 - 14:12:21
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="author" content="Enora Boscher Erwan Chevalier">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>ISEN Car - Accueil</title>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous">
+
+    <!-- JS Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"
+      integrity="sha256-x3YZWtRjM8bJqf48dFAv/qmgL68SI4jqNWeSLMZaMGA=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+    <script src="js/ajax.js" defer></script>
+    <script src="js/tweets.js" defer></script>
+    <link rel="stylesheet" href="css/css.css">
+  </head>
+  <body class="image-background" >
+    <header>
+
+
+    <!-- navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="img/logo_isencar.png" width="75px" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Connexion
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+<div class="container">
+  <div class="card">
+    <h1>Je recherche un trajet !</h1>
+    </div>
+	<div class="card recherche">
+    <div class="card-title">
+      <h4 class="toISEN">Je me rends à un ISEN</h4>
+      <h4 class="fromISEN">Je pars d'un ISEN</h4>
+    </div>
+    <hr>
+		<form>
+			<label for ="depart"> Adresse de départ :</label><br>
+			<input type="text" name="depart" id="depart" required>
+			<br>
+			<label for="arrivee"> Veuillez sélectionner votre ISEN d'arrivée</label><br>
+			<input type="radio" id="brest" name="isen" value="brest">
+			<label for="brest">Brest</label>
+			<input type="radio" id="rennes" name="isen" value="rennes">
+			<label for="rennes">Rennes</label>
+			<input type="radio" id="nantes" name="isen" value="nantes">
+			<label for="nantes">Nantes</label>
+			<input type="radio" id="caen" name="isen" value="caen">
+			<label for="caen">Caen</label>
+			<br>
+			<label for="date"> Date de départ :</label><br>
+			<input type="date" id="date" name="date" value="jj-mm-aaaa" required>
+			<br>
+			<label for="time">Heure de départ :</label><br>
+			<input type="time" id="time" name="time" required>
+			<br><br>
+			<input type="submit" value="Rechercher">
+		</form>
+	</div>
+</div>
+<div class="container">
+  <div class="card">
+    <h1>Je propose un trajet !</h1>
+    </div>
+	<!-- <div class="card recherche">
+		<form>
+			<label for ="depart"> Adresse de départ :</label><br>
+			<input type="text" name="depart" id="depart" required>
+			<br>
+			<label for="arrivee"> Veuillez sélectionner votre ISEN d'arrivée</label><br>
+			<input type="radio" id="brest" name="isen" value="brest">
+			<label for="brest">Brest</label>
+			<input type="radio" id="rennes" name="isen" value="rennes">
+			<label for="rennes">Rennes</label>
+			<input type="radio" id="nantes" name="isen" value="nantes">
+			<label for="nantes">Nantes</label>
+			<input type="radio" id="caen" name="isen" value="caen">
+			<label for="caen">Caen</label>
+			<br>
+			<label for="date"> Date de départ :</label><br>
+			<input type="date" id="date" name="date" value="jj-mm-aaaa" required>
+			<br>
+			<label for="time">Heure de départ :</label><br>
+			<input type="time" id="time" name="time" required>
+			<br><br>
+			<input type="submit" value="Rechercher">
+		</form>
+	</div> -->
+</div>
+
+
+<footer class="bg-dark text-center fixed-bottom relative_pos">
+  <!-- Copyright -->
+  <div class="text-center text-light p-3" >
+    © 2021 Copyright: Erwan Chevalier Enora Boscher
+
+  </div>
+  <!-- Copyright -->
+</footer>
+  </body>
+</html>

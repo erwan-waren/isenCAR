@@ -1,0 +1,115 @@
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+  font-family: sans-serif;
+}
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.image-background {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url(../img/bg.png);
+	background-size : cover;
+	background-position : center center;
+
+}
+.relative_pos {
+  position : relative;
+  width:100%;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:1rem;
+}
+.card {
+  margin:1%;
+  padding:1%;
+  border-radius: 15px;
+  border-color: white;
+
+}
+.recherche {
+  padding:3%;
+  text-align: center;
+  margin: 4%;
+  background-color: rgba(255,255,255,0.8);
+  border-color: rgba(255,255,255,0.8);
+}
+.connexion {
+  padding:3%;
+  text-align: center;
+  margin: 4%;
+  background-color: rgba(255,255,255,0.8);
+  border-color: rgba(255,255,255,0.8);
+}
+.enregistre {
+  padding:3%;
+  text-align: center;
+  margin: 4%;
+  background-color: rgba(255,255,255,0.8);
+  border-color: rgba(255,255,255,0.8);
+}
+/* .card-title .toISEN {
+  float:left;
+}
+.card-title .fromISEN{
+  float: right;
+} */
+.card-title {
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap:7em;
+}
+.card-title:first-child{
+  align-self:center;
+}
+.recap {
+  padding:1%;
+  text-align: center;
+  margin: 2%;
+  background-color: rgba(180, 178, 178, 0.5);
+  border-color: rgba(180,178,178,0.5);
+}
+.trajet {
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+.covoitureur {
+  position: absolute;
+  left:45%;
+}
+.hdepart .harrivee{
+  position : absolute;
+  left:1.5%;
+  right:90%;
+}
+.hdepart p{
+  color:red;
+}
+.harrivee p{
+  color:red;
+}
+.hdepart {
+  top:10%;
+  bottom:76%;
+}
+.harrivee {
+  top:57%;
+  bottom:30%;
+}
+.prix {
+  position:absolute;
+  left:90%;
+  right:4%;
+  top:10%;
+  bottom:76%;
+}
